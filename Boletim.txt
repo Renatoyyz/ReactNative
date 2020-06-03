@@ -1,0 +1,41 @@
+Projeto: Projeto Financas
+Autor: Renato Oliveira
+Data de inicio: 31/05/2020
+
+Pacotes para esse projeto:
+
+1 - yarn add styled-components => ok
+2 - yarn add firebase => ok 
+3 - yarn add react-native-vector-icons => ok
+4 - yarn add react-native-community/async-storage => ok
+5 - yarn add @react-navigation/native => ok
+6 - yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view => ok
+7 - yarn add @react-navigation/stack => ok
+8 - yarn add @react-navigation/drawer => ok
+9 - yarn add react-native-picker-select => ok
+10 - yarn add date-fns => ok
+11 - yarn add @react-native-community/datetimepicker
+
+9 - react-native link => ok
+
+Para rodar em ios:
+
+1 - instalar cocoapods:
+    sudo gem install cocoapods
+    link = https://cocoapods.org
+2 - certificar se tem o sdk iphoneos:
+    xcrun -k --sdk iphoneos --show-sdk-path
+    se der erros:
+    xcrun:_ error: SDK "iphoneos" cannot be located
+    xcrun: error: SDK "iphoneos" cannot be located
+    xcrun: error: unable to lookup item 'Path' in SDK 'iphoneos'
+
+    então rodar:
+    sudo xcode-select --switch /Applications/Xcode.app
+    Link da discussão do problema:
+    https://github.com/facebook/react-native/issues/18408
+3 - Rodar no diretorio ios do projeto:
+    pod instal
+
+4 - voltar para projeto e rodar:
+    yarn react-native run-ios
